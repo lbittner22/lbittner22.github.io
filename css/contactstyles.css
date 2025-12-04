@@ -1,0 +1,101 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px;
+    background-color: #060814;
+    color: #F4F4F4;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #1A1036;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 22px rgba(0, 255, 195, 0.25);
+    border: 1px solid rgba(255, 110, 199, 0.5);
+}
+
+h1,
+h2 {
+    color: #FF6EC7;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 110, 199, 0.7);
+}
+
+h2 {
+    border-bottom: 2px solid #00FFC3;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+.contact-section {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 255, 195, 0.4);
+    background-color: rgba(6, 8, 20, 0.9);
+}
+
+.contact-section p {
+    margin: 5px 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00FFC3;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #060814;
+    color: #F4F4F4;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #FF6EC7;
+    box-shadow: 0 0 10px rgba(255, 110, 199, 0.6);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #FF6EC7;
+    color: #060814;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 16px rgba(255, 110, 199, 0.7);
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background-color: #00FFC3;
+    color: #060814;
+    box-shadow: 0 0 16px rgba(0, 255, 195, 0.8);
+}

@@ -1,0 +1,126 @@
+
+.game-page {
+    max-width: 1000px;
+    margin: 20px auto 40px;
+    padding: 0 20px;
+}
+
+.game-hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+    background-color: #1A1036;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 255, 195, 0.4);
+    box-shadow: 0 0 22px rgba(0, 255, 195, 0.25);
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.game-cover img {
+    width: 280px;
+    max-width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 0 18px rgba(255, 110, 199, 0.6);
+    border: 2px solid #FF6EC7;
+}
+
+.game-summary {
+    flex: 1 1 240px;
+}
+
+.game-summary h2 {
+    color: #FF6EC7;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 110, 199, 0.8);
+}
+
+.game-summary p {
+    margin-bottom: 12px;
+}
+
+.game-highlights {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.game-highlights li {
+    margin-bottom: 6px;
+    color: #FFD447;
+}
+
+/* Details table */
+
+.game-details {
+    background-color: #1A1036;
+    border-radius: 18px;
+    padding: 20px;
+    border: 1px solid rgba(255, 110, 199, 0.4);
+    box-shadow: 0 0 20px rgba(255, 110, 199, 0.25);
+    margin-bottom: 24px;
+}
+
+.game-details h3,
+.game-opinion h3 {
+    color: #00FFC3;
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-shadow: 0 0 8px rgba(0, 255, 195, 0.8);
+}
+
+.game-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.game-table th,
+.game-table td {
+    padding: 8px 10px;
+    border: 1px solid #2b2e4a;
+}
+
+.game-table th {
+    background-color: #060814;
+    color: #FF6EC7;
+    text-align: left;
+}
+
+.game-table tr:nth-child(even) {
+    background-color: #20173f;
+}
+
+.game-table tr:nth-child(odd) {
+    background-color: #151027;
+}
+
+/* Opinion / extra text */
+
+.game-opinion {
+    background-color: #1A1036;
+    border-radius: 18px;
+    padding: 20px;
+    border: 1px solid rgba(0, 255, 195, 0.4);
+    box-shadow: 0 0 18px rgba(0, 255, 195, 0.25);
+    margin-bottom: 24px;
+}
+
+/* Links inside content */
+
+.game-page a {
+    color: #00FFC3;
+    text-decoration: none;
+}
+
+.game-page a:hover {
+    color: #FF6EC7;
+    text-shadow: 0 0 10px rgba(255, 110, 199, 0.8);
+}
+
+header h1 {
+    color: #FF6EC7;
+    text-shadow: 0 0 10px rgba(255, 110, 199, 0.6);
+}

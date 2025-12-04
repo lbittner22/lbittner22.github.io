@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Bittner's Game Survey</title>
+
+    <link rel="icon" type="image/x-icon" href="media/favicon_io/favicon.ico">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/formstyles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Luke Bittner's Game List</h1>
+        <p>Share your thoughts about games</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="max.html">Max Payne</a></li>
+            <li><a href="felv.html">Felvidek</a></li>
+            <li><a href="re7.html">RE7</a></li>
+            <li><a href="form.html">Survey</a></li>
+        </ul>
+    </nav>
+
+    <div id="form-page">
+        <div class="page-container">
+            <div class="card">
+                <h1>Game Preference Survey</h1>
+
+                <p id="survey-message"></p>
+
+                <form class="form-content" action="#" method="post" onsubmit="return handleSubmit(event)">
+
+                    <div class="form-group">
+                        <label for="name">Name (optional)</label>
+                        <input
+                            class="form-input"
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Player 1"
+                        >
+
+                    <div class="form-group">
+                        <label>Preferred way to play (choose one)</label><br>
+
+                        <div class="checkbox-block">
+                            <label for="pc">PC</label>
+                            <input type="radio" id="pc" name="platform" value="PC">
+                        </div>
+
+                        <div class="checkbox-block">
+                            <label for="console">Console</label>
+                            <input type="radio" id="console" name="platform" value="Console">
+                        </div>
+
+                        <div class="checkbox-block">
+                            <label for="handheld">Handheld / Mobile</label>
+                            <input type="radio" id="handheld" name="platform" value="Handheld">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Favorite genres (check all that apply)</label><br>
+
+                        <div class="checkbox-block">
+                            <label for="action">Action / Shooter</label>
+                            <input type="checkbox" id="action" name="genre" value="Action">
+                        </div>
+
+                        <div class="checkbox-block">
+                            <label for="horror">Horror</label>
+                            <input type="checkbox" id="horror" name="genre" value="Horror">
+                        </div>
+
+                        <div class="checkbox-block">
+                            <label for="rpg">RPG</label>
+                            <input type="checkbox" id="rpg" name="genre" value="RPG">
+                        </div>
+
+                        <div class="checkbox-block">
+                            <label for="indie">Indie / Experimental</label>
+                            <input type="checkbox" id="indie" name="genre" value="Indie">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Anything else you want to say about games?</label>
+                        <textarea
+                            class="form-input"
+                            id="comments"
+                            name="comments"
+                            rows="4"
+                            placeholder="Hot takes, favorite moments, or recommendations..."></textarea>
+                    </div>
+
+                    <button class="button button-primary" type="submit">
+                        Submit Survey
+                    </button>
+                    <button class="button button-secondary" type="reset" onclick="handleReset()">
+                        Reset Form
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
